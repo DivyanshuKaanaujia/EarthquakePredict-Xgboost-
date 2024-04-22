@@ -1,4 +1,4 @@
-## Earthquake Prediction using XGboost
+## Earthquake Prediction
 ## Overview
 The goal of this project is to use machine learning algorithms to forecast earthquakes. Python and a number of libraries for data processing, analysis, and machine learning are used in the model's construction.
 
