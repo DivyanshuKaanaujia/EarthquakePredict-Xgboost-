@@ -1,6 +1,6 @@
 ## Earthquake Prediction using XGboost
 ## Overview
-Machine learning project aimed at Bank Growth Rate Prediction using the Random Forest algorithm. The project employs a Streamlit based web application to provide a user-friendly interface for predicting growth rate based on provided input data.
+The goal of this project is to use machine learning algorithms to forecast earthquakes. Python and a number of libraries for data processing, analysis, and machine learning are used in the model's construction.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -30,7 +30,7 @@ The project structure is organized as follows:
 ## Dependencies
 - ### Python 3:
   Python is a widely-used programming language in the field of data science and machine learning. It serves as the foundation for developing the entire project, including the web application and machine learning model.
-- ### numpy: S
+- ### numpy:
   Library for numerical computing.
 - ### Pandas:
   Pandas is a powerful library in Python used for data manipulation and analysis. In this project, Pandas likely plays a role in preprocessing the input data, handling missing values, and transforming the data into a format suitable for the machine learning model. Version 2.0.0 of Pandas is specified to ensure consistency and compatibility with the project.
@@ -65,14 +65,15 @@ I've included screenshots from my Jupyter Notebook to showcase various aspects o
 ![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/72af5dc1-7412-48f7-9c41-67dcd9a4016f)
 
 
-#### Model Evaluation Metrics
-For DecisionTreeClassifier
+## Model Evaluation Metrics
+
+#### 1. For DecisionTreeClassifier
 ![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/b788056b-dc4c-4394-ae3d-dd126211f37c)
 
-For RandomForestClassifier
+#### 2. For RandomForestClassifier
 ![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/21c89be6-c399-4b26-874e-670e78c7d7e3)
 
-For XGBClassifier
+#### 3. For XGBClassifier
 ![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/df529f65-48cc-4b2b-9a4d-9bcddaa366e1)
 
 
