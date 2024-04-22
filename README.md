@@ -14,19 +14,13 @@ Machine learning project aimed at Bank Growth Rate Prediction using the Random F
 To use this project locally, follow these steps:
 1. Clone the repository:
    ```
-   git clone https://github.com/adiiityak/Bank-Growth-Rate-Prediction.git
+   git clone https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-.git
    ```
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Setup Anaconda environment:
+2. Export ipynb to google collab
 
-4. Run the Streamlit application:
-   ```
-   streamlit run app.py
-   ```
-5. Access the web application in your browser at `http://localhost:8501/`.
+3. Put all_month(2).csv to root directory of Data_Processing(Earthquake) in google collab
+
+4. Get Earthquake_features.csv and Earthquake_predict.csv and put them in the root directory of Earthqauke_Prediction(XgboostClassifier)
 
 ## Steps to Execute
 The web application allows users to input customer data (such as credit score, age, tenure, balance, etc.) and get predictions. Users can input their data via the web interface and receive predictions in real-time.
