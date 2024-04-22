@@ -4,10 +4,8 @@ Machine learning project aimed at Bank Growth Rate Prediction using the Random F
 
 ## Table of Contents
 - [Installation](#installation)
-- [Steps to Execute](#steps-to-execute)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
 - [Model Screenshots](#model-screenshots)
 
 ## Installation
@@ -19,49 +17,34 @@ To use this project locally, follow these steps:
 2. Export ipynb to google collab
 
 3. Put all_month(2).csv to root directory of Data_Processing(Earthquake) in google collab
-
+   ![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/7ba096b2-4cf0-4cff-9163-142ed97bc3c5)
 4. Get Earthquake_features.csv and Earthquake_predict.csv and put them in the root directory of Earthqauke_Prediction(XgboostClassifier)
-
-## Steps to Execute
-The web application allows users to input customer data (such as credit score, age, tenure, balance, etc.) and get predictions. Users can input their data via the web interface and receive predictions in real-time.
-
-To predict growth:
-### Method 1
-1. Fill in the required fields with customer information.
-2. Click on the "Predict" button.
-3. The application will generate a prediction based on the input data using the Random Forest algorithm.
-![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/b83c93fd-d2c3-49bf-a178-907ead06d0f8)
-![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/24d94d52-b83f-4153-92e0-364c31126e69)
-
-### Method 2
-1. Click on Browse Files.
-2. Upload your dataset directly into the streamlit.
-3. The application will generate a prediction based on the dataset and it will give percentage of member who stays in the bank.
-![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/48e69f26-29b9-44d5-8ed3-473cf2afa6a1)
-
-
+   ![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/3dbbfcf7-0527-4c01-8956-947108f4a4cb)
 
 ## Project Structure
 The project structure is organized as follows:
-- `app.py`: Streamlit application handling web requests and model predictions.
-- `test.ipynb`: Contains python code.
-- `requirements`: Contains all dependencies used in the prediction
-- `Bank_Growth_Rate_Prediction.pkl`: Contains the trained Random Forest model for growth rate prediction.
-- `Dataset.csv`: Data used for training and testing the model.
+- `Data_Processing(Earthquake).ipynb`: Used for Data transformation and to create csv on which prediction will be performed
+- `Earthquake_Prediction(XgboostClassifier).ipynb`: Contains python code.
+- `all_month(2).csv`: Data used for training and testing the model.
 
 ## Dependencies
 - ### Python 3:
   Python is a widely-used programming language in the field of data science and machine learning. It serves as the foundation for developing the entire project, including the web application and machine learning model.
-- ### Streamlit==1.27.2: S
-  Streamlit is a popular Python library for building interactive web applications for machine learning and data science projects. In this project, Streamlit is used to create the user-friendly interface that allows users to input customer data and receive predictions in real-time. Version 1.27.2 specifically indicates the version of Streamlit used, ensuring compatibility with other components of the project.
-- ### Pandas==2.0.0:
+- ### numpy: S
+  Library for numerical computing.
+- ### Pandas:
   Pandas is a powerful library in Python used for data manipulation and analysis. In this project, Pandas likely plays a role in preprocessing the input data, handling missing values, and transforming the data into a format suitable for the machine learning model. Version 2.0.0 of Pandas is specified to ensure consistency and compatibility with the project.
-- ### Scikit-learn==1.2.2:
-  Scikit-learn is a popular machine learning library in Python that provides various algorithms and tools for building predictive models. In this project, Scikit-learn is used specifically for implementing the Random Forest algorithm, which predicts the bank growth rate based on the provided customer data. Version 1.2.2 is specified to ensure that the project utilizes the desired version with its corresponding features and bug fixes
-- ### Numpy==1.23.1:
-  NumPy is a fundamental package for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently. In this project, NumPy likely aids in handling numerical data and performing computations required during the preprocessing and prediction stages. Version 1.23.1 is specified to ensure compatibility with other dependencies and maintain consistency in the project.
-- ... (Other dependencies are listed in `requirements.txt`)
-
+- ### sklearn:
+  Library for machine learning algorithms
+- ### datetime:
+  Module for working with dates and times.
+- ### matplotlib:
+  Library for plotting graphs and charts.
+- ### os:
+  Module for interacting with the operating system.
+- ### xgboost:
+  Library for gradient boosting.
+  
 ## Contributing
 Contributions to improve the project are welcome! Here's how you can contribute:
 - Fork the repository
@@ -75,17 +58,21 @@ Feel free to modify this README file to include more specific instructions, addi
 ### Model Screenshots
 
 I've included screenshots from my Jupyter Notebook to showcase various aspects of the model's performance and insights.
-![2](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/60d4875e-398c-48f0-b4b8-d7fe60f88c9b)
 
 #### Feature Importance
-![1 1](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/2e4b12bc-9787-4582-8c0e-3f82831f22d6)
-![1 2](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/715a92c2-f40f-4fb5-91df-c60325d9f05d)
-![1 3](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/68ad0211-db9a-439d-8a05-33e00575c5e4)
+![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/a798a57f-0790-42b2-9bdd-2f31a2eb541b)
+![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/f64da021-463b-4503-86f4-81ce85b5bc56)
+![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/72af5dc1-7412-48f7-9c41-67dcd9a4016f)
 
-This screenshot demonstrates the feature importance plot generated from the Random Forest model, highlighting the key factors influencing prediction.
-![3 2](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/845c072f-0ee3-4b32-89e7-ffe8969bb524)
-![3 1](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/0320f13d-bd51-4225-baf8-a38b68303836)
 
 #### Model Evaluation Metrics
-![3](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/20a9e369-8d8b-4d16-8ea8-97a6a062f902)
+For DecisionTreeClassifier
+![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/b788056b-dc4c-4394-ae3d-dd126211f37c)
+
+For RandomForestClassifier
+![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/21c89be6-c399-4b26-874e-670e78c7d7e3)
+
+For XGBClassifier
+![image](https://github.com/DivyanshuKaanaujia/EarthquakePredict-Xgboost-/assets/124723859/df529f65-48cc-4b2b-9a4d-9bcddaa366e1)
+
 
